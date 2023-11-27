@@ -4,6 +4,7 @@ import backgroundImage from "../images/Mountain.jpg"
 /**
  * Illustrates the use of children prop and spread operator
  */
+
 const FullScreenSection = ({ children, isDarkBackground, ...boxProps }) => {
   return (
     <VStack
@@ -13,7 +14,7 @@ const FullScreenSection = ({ children, isDarkBackground, ...boxProps }) => {
       bgSize={boxProps.proj ? "cover" : null}
       bgPosition="center"
       bgRepeat={boxProps.proj ? "no-repeat" : null}
-      style={boxProps.proj ? { filter: "grayscale(100%)" } : undefined}
+
     >
       <VStack maxWidth="1280px" minHeight="100vh" {...boxProps}>
         {children}

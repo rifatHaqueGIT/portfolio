@@ -16,8 +16,8 @@ const LandingSection = () => (
     alignItems="center"
     isDarkBackground
     backgroundColor="#3D0C02"
-    proj={false}
-
+    proj=""
+    id="home-section"
   >
     <VStack>
       <Avatar size='xl' src={url} />

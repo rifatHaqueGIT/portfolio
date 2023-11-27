@@ -21,14 +21,14 @@ const projects = [
   {
     title: "Flexiform",
     description:
-      "TODO",
+      "A Unity project, created to help amputee patients to create their own prosthetic designs",
     getImageSrc: () => require("../images/photo3.jpg"),
     link: 'https://github.com/rifatHaqueGIT/Flexiform'
   },
   {
     title: "Deadlock Detect",
     description:
-      "TODO",
+      "A C++ project to detect a deadlock from a text file of processes and resources",
     getImageSrc: () => require("../images/photo4.jpg"),
     link: 'https://github.com/rifatHaqueGIT/deadlock-detect'
   },
@@ -42,7 +42,7 @@ const ProjectsSection = () => {
       p={8}
       alignItems="flex-start"
       spacing={8}
-      proj={false}
+      proj=""
     >
       <Heading as="h1" id="projects-section">
         Featured Projects
