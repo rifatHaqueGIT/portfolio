@@ -1,21 +1,16 @@
-import { React, useState, useEffect } from "react";
+import { React } from "react";
 import FullScreenSection from "./FullScreenSection";
-import { Box, Heading, VStack, Image, HStack } from "@chakra-ui/react";
+import { Heading, VStack, Image, HStack } from "@chakra-ui/react";
+import { ReactComponent as AvataaarsSvg } from "../assets/avataaars.svg";
 import Card from "./Card";
-import {
-    Accordion,
-    AccordionItem,
-    AccordionButton,
-    AccordionPanel,
-    AccordionIcon,
-} from '@chakra-ui/react'
 
 const me = [
     {
         title: 'Who am I',
         description: 'A Software Engineer Based out of Calgary, passionate about web development, AI, and graphics.',
-        imageSrc: () => require("../assets/avataaars.svg"),
+        imageSrc: () => null,
         link: null,
+        svg: "../assets/avataaars.svg",
         color: 'rgba(255, 102, 255, 0.5)'
     },
     {
@@ -23,6 +18,7 @@ const me = [
         description: "I'm all around a nerd, I enjoy spending my free time either playing video games, or trying out board games." + " I also love traveling; seeing new sights, and trying new things.",
         imageSrc: () => require("../images/photo4.jpg"),
         link: null,
+        svg: null,
         color: 'rgba(77, 255, 77, 0.5)'
     },
     {
@@ -30,6 +26,7 @@ const me = [
         description: "Currently I'm learning the React framework to improve my understanding of modern front-end development. This website is a culmination of what I have learned so far.",
         imageSrc: () => require("../images/logo192.png"),
         link: null,
+        svg: null,
         color: 'rgba(255, 102, 255, 0.5)'
     },
     {
@@ -37,6 +34,7 @@ const me = [
         description: "Next I want to learn more about data science by working on some projects exploring large datasets. Additionally I will also work on some C++ projects primarily avour graphics.",
         imageSrc: () => require("../images/p5.png"),
         link: null,
+        svg: null,
         color: 'rgba(77, 255, 77, 0.5)'
     },
     {
@@ -44,6 +42,7 @@ const me = [
         description: "Yes, eventhough I'm based out of Calgary, AB I would be earger to taking opportunities anywhere in the Country. I would also be open to hybrid or remote postions.",
         imageSrc: () => require("../images/p6.jpg"),
         link: null,
+        svg: null,
         color: 'rgba(255, 102, 255, 0.5)'
     }
 ];
@@ -83,7 +82,8 @@ const AboutMe = () => {
                                 link={m.link}
                                 color={m.color}
                             > </Card>
-                            {index % 2 ? null : <Image src={m.imageSrc()} width='200px' height='115px' ></Image>}
+                            {m.svg ? <AvataaarsSvg width='200px' height='115px' /> : null}
+                            {m.svg ? null : (index % 2 ? null : <Image src={m.imageSrc()} width='200px' height='115px' ></Image>)}
                         </HStack>)
                 })}
             </VStack>
