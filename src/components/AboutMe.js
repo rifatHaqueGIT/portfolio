@@ -14,7 +14,7 @@ const me = [
     {
         title: 'Who am I',
         description: 'A Software Engineer Based out of Calgary, passionate about web development, AI, and graphics.',
-        imageSrc: () => require("../images/photo4.jpg"),
+        imageSrc: () => require("../assets/avataaars.svg"),
         link: null,
         color: 'rgba(255, 102, 255, 0.5)'
     },
@@ -28,21 +28,21 @@ const me = [
     {
         title: "What I'm learning",
         description: "Currently I'm learning the React framework to improve my understanding of modern front-end development. This website is a culmination of what I have learned so far.",
-        imageSrc: () => require("../images/photo4.jpg"),
+        imageSrc: () => require("../images/logo192.png"),
         link: null,
         color: 'rgba(255, 102, 255, 0.5)'
     },
     {
         title: 'What does the future hold',
         description: "Next I want to learn more about data science by working on some projects exploring large datasets. Additionally I will also work on some C++ projects primarily avour graphics.",
-        imageSrc: () => require("../images/photo4.jpg"),
+        imageSrc: () => require("../images/p5.png"),
         link: null,
         color: 'rgba(77, 255, 77, 0.5)'
     },
     {
-        title: 'Where do I plan to travel next',
-        description: 'I would also like to visit Japan in the near future. I have already been there on one occasion, and would like to see more of the country on this second trip.',
-        imageSrc: () => require("../images/photo4.jpg"),
+        title: 'Am I open to relocation?',
+        description: "Yes, eventhough I'm based out of Calgary, AB I would be earger to taking opportunities anywhere in the Country. I would also be open to hybrid or remote postions.",
+        imageSrc: () => require("../images/p6.jpg"),
         link: null,
         color: 'rgba(255, 102, 255, 0.5)'
     }

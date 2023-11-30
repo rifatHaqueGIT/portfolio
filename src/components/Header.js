@@ -1,13 +1,12 @@
 import React, { useEffect, useRef } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
+import { faEnvelope, faFile } from "@fortawesome/free-solid-svg-icons";
 import {
   faGithub,
   faLinkedin,
-  faMedium,
-  faStackOverflow,
 } from "@fortawesome/free-brands-svg-icons";
 import { Box, HStack } from "@chakra-ui/react";
+
 
 const socials = [
   {
@@ -21,15 +20,8 @@ const socials = [
   {
     icon: faLinkedin,
     url: "https://www.linkedin.com",
-  },
-  {
-    icon: faMedium,
-    url: "https://medium.com",
-  },
-  {
-    icon: faStackOverflow,
-    url: "https://stackoverflow.com",
-  },
+  }
+
 ];
 
 const Header = () => {
@@ -107,6 +99,7 @@ const Header = () => {
               <a onClick={handleClick('home')} href='/#home' >Home</a>
               <a onClick={handleClick('aboutme')} href='/#aboutme' >About Me</a>
               <a onClick={handleClick('projects')} href='/#projects'>Projects</a>
+              <a href={require('../images/Resume .pdf')} target="_blank" >Resume</a>
             </HStack>
           </nav>
         </HStack>
