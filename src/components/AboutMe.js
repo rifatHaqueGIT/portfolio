@@ -15,8 +15,8 @@ const me = [
     },
     {
         title: 'What do I do for fun',
-        description: "I'm all around a nerd, I enjoy spending my free time either playing video games, or trying out board games." + " I also love traveling; seeing new sights, and trying new things.",
-        imageSrc: () => require("../images/photo4.jpg"),
+        description: "I'm all around a nerd, I enjoy spending my free time either playing video games, or trying out new board games." + " I also love traveling; seeing new sights, and trying new things.",
+        imageSrc: () => require("../images/d3.gif"),
         link: null,
         svg: null,
         color: 'rgba(77, 255, 77, 0.5)'
