@@ -6,6 +6,7 @@ import Footer from "./components/Footer";
 import AboutMe from "./components/AboutMe";
 
 
+
 function App() {
   return (
     <ChakraProvider>
