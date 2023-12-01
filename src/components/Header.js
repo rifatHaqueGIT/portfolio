@@ -96,9 +96,9 @@ const Header = () => {
           </nav>
           <nav>
             <HStack spacing={8}>
-              <a onClick={handleClick(process.env.PUBLIC_URL + 'home')} href='/#home' >Home</a>
-              <a onClick={handleClick(process.env.PUBLIC_URL + 'aboutme')} href='/#aboutme' >About Me</a>
-              <a onClick={handleClick(process.env.PUBLIC_URL + 'projects')} href='/#projects'>Projects</a>
+              <a onClick={handleClick(process.env.PUBLIC_URL + 'home')} href={process.env.PUBLIC_URL + '/#home'} >Home</a>
+              <a onClick={handleClick(process.env.PUBLIC_URL + 'aboutme')} href={process.env.PUBLIC_URL + '/#aboutme'} >About Me</a>
+              <a onClick={handleClick(process.env.PUBLIC_URL + 'projects')} href={process.env.PUBLIC_URL + '/#projects'}>Projects</a>
               <a href={require('../images/Resume .pdf')} target="_blank" >Resume</a>
             </HStack>
           </nav>
