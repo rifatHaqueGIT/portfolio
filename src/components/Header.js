@@ -99,7 +99,7 @@ const Header = () => {
               <a onClick={handleClick('home')} href={process.env.PUBLIC_URL + '/#home'} >Home</a>
               {/* <a onClick={handleClick('aboutme')} href={process.env.PUBLIC_URL + '/#aboutme'} >About Me</a> */}
               <a onClick={handleClick('projects')} href={process.env.PUBLIC_URL + '/#projects'}>Projects</a>
-              <a href={require('../images/Resume .pdf')} target="_blank" >Resume</a>
+              <a href={require('../images/Rifat_Resume.pdf')} target="_blank" >Resume</a>
             </HStack>
           </nav>
         </HStack>
